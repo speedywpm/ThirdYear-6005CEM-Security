@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+   <body>
+       <p>To instert new stock click the button</p>
+      <table border = 1>
+         <thead>
+            <td>ID</td> 
+            <td>Name</td>
+            <td>Description</td>
+            <td>Price</td>
+            <td>Image</td> 
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row["description"]}}</td>
+               <td>{{row['price']}}</td>
+               <td><img src="/uploads/{{row['image']}}" width="80px" height="100px"></td>
+            </tr>
+         {% endfor %}
+      </table>
+       <p>To go back to the store click the button</p>
+       <p><a href="{{url_for('admin')}}"><button>Return back</button></a></p> 
+       
+
+
+      <form action="{{page}}" method="POST">
+         <label for="aidy">ID:</label><br>
+         <input type="text" id="aidy" name="aidy"><br>
+         <label for="namee">Name</label><br>
+         <input type="text" id="namee" name="namee"><br>
+         <label for="desc">Description</label><br>
+         <input type="text" id="desc" name="desc"><br>
+         <label for="pric">Price</label><br>
+         <input type="text" id="pric" name="pric"><br>
+         <label for="imag">Image</label><br>
+         <input type="file" id="imag" name="imag"><br>
+
+         <input type="submit" value="Upload">
+      </form>
+
+      <p>The form only uploads an image name to database, please upload the image manually</p>
+       
+   </body>
+    <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of displaying the table contents was taken-->
+</html>

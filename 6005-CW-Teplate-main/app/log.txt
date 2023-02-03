@@ -1,0 +1,1422 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /stockedit [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 95, in stockEdit
+    return flask.render_template("stockedit.html",rows = rows) #prints out all of the user
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 150, in render_template
+    ctx.app,
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/stockedit.html", line 45, in top-level template code
+    <p><a href="{{url_for('upload_file')}}"><button>Upload an image</button></a></p>
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/helpers.py", line 326, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/werkzeug/routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'upload_file'. Did you mean 'updateUser' instead?
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:18:13] "[35m[1mGET /stockedit HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /stockedit [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 95, in stockEdit
+    return flask.render_template("stockedit.html",rows = rows) #prints out all of the user
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 150, in render_template
+    ctx.app,
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/stockedit.html", line 45, in top-level template code
+    <!--<p><a href="{{url_for('upload_file')}}"><button>Upload an image</button></a></p> -->
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/helpers.py", line 326, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/werkzeug/routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'upload_file'. Did you mean 'updateUser' instead?
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:19:53] "[35m[1mGET /stockedit HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "[33mGET /uploads/randombook.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:10] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "POST /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "[33mGET /uploads/randombook.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:20:32] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /stockedit [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 82, in stockEdit
+    con.execute("INSERT INTO product values(?,?,?,?,?);", (a, b, c, d, e))
+sqlite3.IntegrityError: UNIQUE constraint failed: product.id
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:03] "[35m[1mPOST /stockedit HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:05] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "GET /uploads/randombook.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:06] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:14] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:16] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:28] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "GET /user/3/settings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:30] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:40] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:21:41] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:56] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "GET /user/3/settings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:24:58] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:00] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:01] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:05] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /adminproducts [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 214, in admproducts
+    books = books)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: adminproducts.html
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:06] "[35m[1mGET /adminproducts HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /adminproducts [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 214, in admproducts
+    books = books)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 150, in render_template
+    ctx.app,
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminproduct.html", line 1, in top-level template code
+    {% extends "adminbase.html" %}
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminbase.html", line 71, in top-level template code
+    {% block content %}
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminproduct.html", line 9, in block 'content'
+    <h1> {{ item["name"] }}</h1>
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 455, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'item' is undefined
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:50] "[35m[1mGET /adminproducts HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:53] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /adminproducts [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 214, in admproducts
+    books = books)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 150, in render_template
+    ctx.app,
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminproduct.html", line 1, in top-level template code
+    {% extends "adminbase.html" %}
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminbase.html", line 71, in top-level template code
+    {% block content %}
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/templates/adminproduct.html", line 9, in block 'content'
+    <h1> {{ item["name"] }}</h1>
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/jinja2/environment.py", line 455, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'item' is undefined
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:25:54] "[35m[1mGET /adminproducts HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.191.39:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:17] "[33mGET /adminproducts HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:21] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "GET /user/3/settings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [18/Nov/2022 18:28:23] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:36] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:41] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:48] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:49] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:51] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:53] "GET /userview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:05:59] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:00] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:01] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:05] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:06] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:10] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "GET /user/6/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:06:13] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 41, in admin
+    theQry = "Select * FROM User WHERE id = '{0}'".format(adm)
+NameError: name 'adm' is not defined
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:14:04] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1702, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'admin' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:14:58] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:15] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:16] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:17] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:17] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:17] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:17] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:17] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:19] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1702, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'admin' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:20] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1702, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'admin' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:15:50] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1538, in finalize_request
+    response = self.make_response(rv)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1702, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'admin' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:10] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:51] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:53] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:16:55] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:00] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:17:06] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:14] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:19:27] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:24:15] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "GET /products?item=1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:26:19] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:02] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:29:03] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:30:41] "[33mGET /user/terms.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:43:50] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:07] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:10] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:11] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:49:16] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "GET /user/6/settings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:50:20] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:14] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:15] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:19] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 16:54:21] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:13:21] "GET /userview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:43] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:44] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:44] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:44] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:45] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:45] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:45] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "GET /stockedit HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:22:46] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:12] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:12] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:12] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:12] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:12] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:13] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "GET /user/3/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:15] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "GET /review/3/1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:27:34] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:02] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "GET /products?item=1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:28:03] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:15] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:16] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:20] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "GET /products?item=1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 17:49:21] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:57] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:22:59] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 183, in login
+    encrypt = bcrypt.hashpw(password, bcrypt.gensalt(10))
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/bcrypt/__init__.py", line 74, in hashpw
+    raise TypeError("Strings must be encoded before hashing")
+TypeError: Strings must be encoded before hashing
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:23:06] "[35m[1mPOST /user/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:25:55] "GET /user/login HTTP/1.1" 200 -
+ERROR:app.meta:Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 183, in login
+    encrypt = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt(10))
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/bcrypt/__init__.py", line 74, in hashpw
+    raise TypeError("Strings must be encoded before hashing")
+TypeError: Strings must be encoded before hashing
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:26:00] "[35m[1mPOST /user/login HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:35] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:36] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:36] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:36] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:36] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:36] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 207, in login
+    matched = bcrypt.checkpw(userQry["password"], encrypt)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/bcrypt/__init__.py", line 89, in checkpw
+    raise TypeError("Strings must be encoded before checking")
+TypeError: Strings must be encoded before checking
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:39] "[35m[1mPOST /user/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:56] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:28:57] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 275, in create
+    userQry = write_db(theQry)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/meta.py", line 54, in write_db
+    db.execute(query, args)
+sqlite3.OperationalError: near "$2b$10$r5iRqxnpC8zAvlT3RUPWp": syntax error
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:29:07] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:29:58] "GET /user/create HTTP/1.1" 200 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 275, in create
+    userQry = write_db(theQry)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/meta.py", line 54, in write_db
+    db.execute(query, args)
+sqlite3.OperationalError: near "$2b$10$UcfsqwpsLuASErCVaKHoeOApl5zLAOAhomDGhKhqRzjUO4ooaUwbi": syntax error
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:30:03] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:33:45] "GET /user/create HTTP/1.1" 200 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 275, in create
+    userQry = write_db(theQry)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/meta.py", line 54, in write_db
+    db.execute(query, args)
+sqlite3.OperationalError: near "$2b$10$k2FOs4Ixs504YzAgSCBPcuIkQHDDKiqQGED4L2B": syntax error
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:33:50] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:45] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 273, in create
+    theQry = f"INSERT INTO user (id, email, password, adm) VALUES (NULL, '{email}', '{encrypt.format()}', 0)"
+AttributeError: 'bytes' object has no attribute 'format'
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:46:56] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:30] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 276, in create
+    userQry = write_db(theQry)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/meta.py", line 54, in write_db
+    db.execute(query, args)
+sqlite3.OperationalError: near "$2b$12$": syntax error
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:47:37] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:21] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/create [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 277, in create
+    userQry = write_db(theQry)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/meta.py", line 54, in write_db
+    db.execute(query, args)
+sqlite3.OperationalError: near "$2b$12$iDsjzvZxbwd3EFVsoPUDUO4lkihjGjNlQ8zqu9QRPp8oiuxVTVrQO": syntax error
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 18:48:27] "[35m[1mPOST /user/create HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:02] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:05] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+ERROR:app.meta:Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 207, in login
+    matched = bcrypt.checkpw(userQry["password"], encrypt)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/bcrypt/__init__.py", line 89, in checkpw
+    raise TypeError("Strings must be encoded before checking")
+TypeError: Strings must be encoded before checking
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:10:11] "[35m[1mPOST /user/login HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.121.138:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:27] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "POST /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:29] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:34] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[32mPOST /user/create HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:39] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:42] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:46] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "GET /user/8/settings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:49] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:52] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "GET /user/8/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:53] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:18:55] "GET /userview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:05] "POST /userview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:06] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [19/Nov/2022 19:19:07] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.107.15:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:17] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:18] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:18] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:18] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:18] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:19] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:26] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 42, in admin
+    theQry = "Select * FROM User WHERE email = '{0}'".format(user)
+NameError: name 'user' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:08:26] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.107.15:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 42, in admin
+    theQry = "Select * FROM user WHERE email = '{0}'".format(user)
+NameError: name 'user' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:09:01] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:10:28] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 42, in admin
+    theQry = "Select * FROM user WHERE email = '{0}'".format(user)
+NameError: name 'user' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:10:28] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 42, in admin
+    theQry = "Select * FROM User WHERE id = '{0}'".format(userId)
+NameError: name 'user' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:12:20] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 42, in admin
+    theQry = "Select * FROM User WHERE id = '{0}'".format(userId)
+NameError: name 'user' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:12:41] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.107.15:5000/ (Press CTRL+C to quit)
+ERROR:app.meta:Exception on /admin [GET]
+Traceback (most recent call last):
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/codio/workspace/env/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/codio/workspace/6005-CW-Teplate-main/app/views.py", line 43, in admin
+    userQry =  query_db(theQry, one=True)
+NameError: name 'theQry' is not defined
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:12:58] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.107.15:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:20] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:22] "GET /products HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:22] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:22] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:23] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:25] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:26] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "GET /admin HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:31] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "GET /user/8/adminsettings HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:35] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:13:39] "GET /userview HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:36] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:37] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "GET /user/create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:38] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[32mPOST /user/create HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:50] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[32mPOST /user/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /uploads/GrayHat.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /uploads/LinuxBasics.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /uploads/WebAppHackers.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [20/Nov/2022 13:22:56] "[36mGET /uploads/randombook.jpg HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.222.54.39:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /static/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /static/materialize/css/materialize.min.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /static/materialize/js/materialize.min.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /uploads/LinuxBasics.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /uploads/WebAppHackers.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "[33mGET /uploads/random-9781847398819_hr.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /uploads/randombook.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "GET /uploads/GrayHat.jpg HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:05] "GET /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:06] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:06] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:06] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:06] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:06] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "POST /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:17] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "POST /user/login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "[36mGET /static/markdownEditor/dist/simplemde.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "[36mGET /static/markdownEditor/dist/simplemde.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "[36mGET /static/materialize/css/materialize.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.10.156 - - [28/Nov/2022 14:51:31] "[36mGET /static/materialize/js/materialize.min.js HTTP/1.1[0m" 304 -

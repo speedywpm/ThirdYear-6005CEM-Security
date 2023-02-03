@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <body>
+       <p>To inster new stock click the button</p>
+      <table border = 1>
+         <thead>
+            <td>id</td> 
+            <td>email</td>
+            <td>password</td>
+            <td>adm</td> 
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["email"]}}</td>
+               <td>{{row["password"]}}</td>
+               <td>{{row['adm']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+       <p>To go back to the store click the button</p>
+       <p><a href="{{url_for('admin')}}"><button>Return back</button></a></p> 
+       
+
+
+    <form action="{{page}}" method="POST">
+       <label for="aidi">ID:</label><br>
+       <input type="text" id="aidi" name="aidi"><br>
+       <label for="admp">0 or 1</label><br>
+       <input type="text" id="admp" name="admp"><br>
+       <input type="submit" value="Submit">
+    </form>
+   </body>
+    <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of displaying the table contents was taken-->
+</html>

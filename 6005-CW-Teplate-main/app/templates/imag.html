@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body>
+       <p>Uploading image</p>
+       <p>To go back to the store click the button</p>
+       <p><a href="{{url_for('admin')}}"><button>Return back</button></a></p> 
+       
+
+
+      <form action="{{page}}" method="POST" enctype=multipart/form-data>
+         <label for="imag">Image</label><br>
+         <input type="file" id="imag" name="imag"><br>
+         <input type="submit" value="Upload">
+      </form>
+   </body>
+    <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of displaying the table contents was taken-->
+</html>
